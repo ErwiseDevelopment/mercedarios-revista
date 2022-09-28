@@ -1,0 +1,74 @@
+$layout-name: 'l-magazine';
+
+.#{$layout-name} {
+    &__edition {
+        bottom: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .2s;
+        opacity: 1;
+        position: absolute;
+    }
+
+    .swiper-slide {
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: all .4s;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            background-color: rgba(0, 0, 0, .8);
+            z-index: 999;
+        }
+
+        &::after {
+            content: 'Acesse agora';
+            line-height: 100%;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .4s;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            font-size: 2.25rem;
+            font-weight: 700;
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            color: $color-folk-white;
+            z-index: 9999;
+        }
+
+        img {
+            transform: scale(.9);
+            transition: all .2s;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &::after {
+                top: 50%;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            img {
+                transform: scale(1.0);
+            }
+
+            .#{$layout-name} {
+                &__edition {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

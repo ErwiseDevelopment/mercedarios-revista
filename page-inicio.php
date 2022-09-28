@@ -19,23 +19,17 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-<!-- teste -->
-
-<!-- menu -->
-<?php echo get_template_part( 'template-parts/content', 'menu-editorials' ) ?>
-<!-- end menu -->
-
 <!-- banner -->
-<?php echo get_template_part( 'template-parts/content', 'banner' ) ?>
+<?php echo get_template_part( 'template-parts/content', 'home-banner' ) ?>
 <!-- end banner -->
 
-<!-- news -->
-<?php echo get_template_part( 'template-parts/content', 'news' ) ?>
-<!-- end news -->
+<!-- edition -->
+<?php echo get_template_part( 'template-parts/content', 'home-edition' ) ?>
+<!-- end edition -->
 
-<!-- blog -->
-<?php echo get_template_part( 'template-parts/content', 'blog' ) ?>
-<!-- end blog -->
+<!-- magazine -->
+<?php echo get_template_part( 'template-parts/content', 'home-magazine' ) ?>
+<!-- end magazine -->
 
 <img
 class="img-fluid"
