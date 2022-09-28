@@ -19,6 +19,8 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
+<!-- teste -->
+
 <!-- menu -->
 <?php echo get_template_part( 'template-parts/content', 'menu-editorials' ) ?>
 <!-- end menu -->
