@@ -33,6 +33,20 @@
                 </div>
                 <!-- end swiper -->
             </div>
+
+            <div class="col-12">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-4 mt-5 px-4">
+                        <a
+                        class="w-100 d-block u-font-size-22 u-font-weight-bold u-font-family-lato text-center text-decoration-none u-color-folk-white u-bg-folk-golden hover:u-bg-folk-dark-marron py-2"
+                        href="#">
+                            Todas as revistas
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
