@@ -1,0 +1,10 @@
+$layout-name: 'l-contact';
+
+.#{$layout-name} {
+    &__image {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%) scale(1.3);
+    }
+}

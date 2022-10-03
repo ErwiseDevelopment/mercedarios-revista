@@ -40,20 +40,20 @@
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 
-    <!-- top info -->
-    <?php echo get_template_part( 'template-parts/content', 'top-info' ) ?>
-    <!-- end top info -->
+    <!-- top menu -->
+    <?php echo get_template_part( 'template-parts/content', 'top-menu' ) ?>
+    <!-- end top menu -->
 
-    <header id="masthead" class="header site-header navbar-static-top <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
+    <header id="masthead" class="header site-header navbar-static-top py-2 <?php echo wp_bootstrap_starter_bg_class(); ?>" style="background-color: #6F0101;"role="banner">
 
         <div class="container">
 
-            <nav class="navbar navbar-expand-xl p-0">
+            <nav class="l-navbar navbar navbar-expand-xl p-0">
 
-                <div class="navbar-brand d-none">
+                <div class="navbar-brand">
                     <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
                         <a href="<?php echo esc_url( home_url( '/' )); ?>">
-                            <img src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                            <img class="img-fluid" style="width:350px" src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                         </a>
                     <?php else : ?>
                         <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>

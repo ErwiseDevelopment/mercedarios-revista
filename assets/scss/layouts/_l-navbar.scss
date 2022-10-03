@@ -1,0 +1,33 @@
+$layout-name: 'l-navbar';
+
+.#{$layout-name} {
+    .nav-item {
+        padding: 0 1rem;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 3px;
+            height: calc(100% - 1rem);
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            position: absolute;
+            background-color: $color-folk-yellow;
+        }
+
+        &:last-child {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .nav-link {
+        font-size: 1.125rem;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        color: $color-folk-white !important;
+    }
+}
