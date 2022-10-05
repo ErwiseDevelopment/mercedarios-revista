@@ -1,6 +1,16 @@
 $layout-name: 'l-navbar';
 
 .#{$layout-name} {
+    .navbar-brand {
+        img {
+            width: 350px;
+
+            @media screen and (max-width: 991px) {
+                width: 210px;
+            }
+        }
+    }
+
     .nav-item {
         padding: 0 1rem;
         position: relative;
@@ -14,6 +24,10 @@ $layout-name: 'l-navbar';
             transform: translateY(-50%);
             position: absolute;
             background-color: $color-folk-yellow;
+
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
         }
 
         &:last-child {
