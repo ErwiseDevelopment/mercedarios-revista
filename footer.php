@@ -26,7 +26,7 @@
                     <a href="#">
                         <img
                         class="img-fluid w-100"
-                        src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/logo-footer.png"
+                        src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/logo-ordem-das-merces.png"
                         alt>
                     </a>
                 </div>
@@ -37,28 +37,30 @@
 
                         <div class="col-lg-4 my-2 my-lg-0">
 
-                            <!-- <h4 class="u-font-size-15 u-font-weight-bold u-font-family-lato u-color-folk-white pl-4">
+                            <h4 class="u-font-size-15 u-font-weight-bold u-font-family-lato u-color-folk-white pl-4">
                                 Cúria Provincial do Brasil
-                            </h4> -->
+                            </h4>
 
                             <p class="d-flex">
                                 <span class="u-icon__free u-icon__local before::u-font-size-20 u-font-weight-semibold u-color-folk-white"></span>
                                 <span class="u-font-size-14 u-font-weight-medium u-font-family-lato u-color-folk-white pl-2">
-                                    <?php echo get_field('endereco', 'option')?>
+                                    Avenida L2 Sul, Quadra 615, Bloco D <br>
+                                    CEP 700200-750 <br>
+                                    Brasília – DF
                                 </span>
                             </p>
 
                             <p class="d-flex">
                                 <span class="u-icon__free u-icon__phone before::u-font-size-20 u-font-weight-semibold u-color-folk-white"></span>
-                                <span class="u-font-size-14 u-font-weight-medium u-font-family-lato u-color-folk-white pl-2">
-                                     <?php echo get_field('telefone_cabecalho', 'option')?>
+                                <span class="u-font-size-14 u-font-weight-medium u-font-family-lato u-color-folk-white pl-2"> 
+                                    61 3346 3890
                                 </span>
                             </p>
 
                             <p class="d-flex">
                                 <span class="u-icon__free u-icon__envelope before::u-font-size-20 u-font-weight-semibold u-color-folk-white"></span>
                                 <span class="u-font-size-14 u-font-weight-medium u-font-family-lato u-color-folk-white pl-2">
-                                    <?php echo get_field('e-mail_cabecalho', 'option')?>
+                                    faleconosco@mercedarios.com.br
                                 </span>
                             </p>
                         </div>
@@ -128,12 +130,13 @@
                                             Pastoral do Empreendedor
                                         </a>
                                     </li>
-                                    <li class="u-list-style-none mb-2">
+
+                                    <!-- <li class="u-list-style-none mb-2">
                                         <a class="u-font-size-14 u-font-weight-medium u-font-family-lato text-decoration-none u-color-folk-white"
                                         href="<?php echo get_field('editoria_acervo', 'option')?>">
                                         Acervo Virtual
                                         </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -145,8 +148,18 @@
 
                             <ul class="mb-0 pl-0">
                                 <li class="u-list-style-none mb-2">
-                                    <a class="u-font-size-14 u-font-weight-medium u-font-family-lato text-decoration-none u-color-folk-white">
-                                       <?php echo get_field('links', 'option') ?>
+                                    <a 
+                                    class="u-font-size-14 u-font-weight-medium u-font-family-lato text-decoration-none u-color-folk-white"
+                                    href="#">
+                                        Política de privacidade
+                                    </a>
+                                </li>
+
+                                <li class="u-list-style-none mb-2">
+                                    <a 
+                                    class="u-font-size-14 u-font-weight-medium u-font-family-lato text-decoration-none u-color-folk-white"
+                                    href="#">
+                                        Política de Cookies
                                     </a>
                                 </li>
 

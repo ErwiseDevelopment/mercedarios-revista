@@ -24,10 +24,29 @@ $layout-name: 'l-navbar';
     }
 
     .nav-link {
+        position: relative;
         font-size: 1.125rem;
         font-weight: 700;
         font-family: 'Lato', sans-serif;
         text-align: center;
         color: $color-folk-white !important;
+
+        &::before {
+            content: '';
+            width: calc(100% - 1rem);
+            height: 0;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .2s;
+            position: absolute;
+            background-color: $color-folk-white;
+        }
+
+        &:hover {
+            &::before {
+                height: 2px;
+            }
+        }
     }
 }

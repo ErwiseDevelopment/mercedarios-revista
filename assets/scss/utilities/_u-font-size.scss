@@ -487,9 +487,21 @@ $utility-name: 'u-font-size';
             }
         }
 
+        &-32 {
+            @media screen and (min-width: 992px) {
+                font-size: 2rem !important;
+            }
+        }
+
         &-38 {
             @media screen and (min-width: 992px) {
                 font-size: 2.375rem !important;
+            }
+        }
+
+        &-42 {
+            @media screen and (min-width: 992px) {
+                font-size: 2.625rem !important;
             }
         }
     }    
@@ -725,9 +737,27 @@ $utility-name: 'u-font-size';
             }
         }
 
+        &-38 {
+            @media screen and (min-width: 1600px) {
+                font-size: 2.375rem !important;
+            }
+        }
+
         &-45 {
             @media screen and (min-width: 1600px) {
                 font-size: 2.8125rem !important;
+            }
+        }
+
+        &-50 {
+            @media screen and (min-width: 1600px) {
+                font-size: 3.125rem !important;
+            }
+        }
+
+        &-68 {
+            @media screen and (min-width: 1600px) {
+                font-size: 4.25rem !important;
             }
         }
     }    

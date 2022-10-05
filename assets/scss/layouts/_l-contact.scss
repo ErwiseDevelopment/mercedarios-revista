@@ -1,6 +1,12 @@
 $layout-name: 'l-contact';
 
 .#{$layout-name} {
+    background-image: url(../images/contact-us-background.png);
+
+    @media screen and (max-width: 991px) {
+        background-color: #7D0000;
+    }
+
     &__image {
         top: 50%;
         left: 50%;

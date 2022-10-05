@@ -41,6 +41,10 @@ $layout-name: 'l-magazine';
             text-align: center;
             color: $color-folk-white;
             z-index: 9999;
+
+            @media screen and (min-width: 1600px) {
+                font-size: 3rem;
+            }
         }
 
         img {

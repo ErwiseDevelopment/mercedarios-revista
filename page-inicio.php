@@ -19,6 +19,12 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
+<style>
+    header {
+        display: none !important;
+    }
+</style>
+
 <!-- banner -->
 <?php echo get_template_part( 'template-parts/content', 'home-banner' ) ?>
 <!-- end banner -->

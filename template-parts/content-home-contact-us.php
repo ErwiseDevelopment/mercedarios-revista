@@ -1,16 +1,14 @@
-<section 
-class="l-contact py-5"
-style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/contact-us-background.png)">
+<section class="l-contact py-5">
 
     <div class="container">
 
         <div class="row">
 
-            <div class="col-12 mt-5 pt-5">
+            <div class="col-12 mt-lg-5 pt-lg-5">
 
                 <div class="row">
 
-                    <div class="col-6">
+                    <div class="col-6 d-none d-lg-block">
 
                         <div>
                             <img
@@ -20,9 +18,9 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                         </div>
                     </div>
 
-                    <div class="col-6 pt-5">
+                    <div class="col-lg-6 pt-5">
 
-                        <h3 class="u-font-size-42 u-font-weight-bold u-font-family-cinzel-decorative text-center u-color-folk-white">
+                        <h3 class="u-font-size-32 lg:u-font-size-42 xxl:u-font-size-50 u-font-weight-bold u-font-family-cinzel-decorative text-center u-color-folk-white">
                             Dúvidas?
                             Fale conosco!
                         </h3>
@@ -56,7 +54,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
 
                                 <div class="col-5 my-2">
                                     <input 
-                                    class="w-100 border-0 d-block u-font-size-20 u-font-weight-bold u-font-family-nunito text-center u-color-folk-white u-bg-folk-yellow py-2"
+                                    class="w-100 border-0 d-block u-font-size-20 xxl:u-font-size-26 u-font-weight-bold u-font-family-nunito text-center u-color-folk-white u-bg-folk-yellow py-2"
                                     type="submit"
                                     value="Enviar">
                                 </div>

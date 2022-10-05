@@ -1,0 +1,34 @@
+.swiper-button-prev-magazine,
+.swiper-button-next-magazine {
+    width: 52px;
+    height: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 999;
+
+    @media screen and (max-width: 991px) {
+        top: 110%;
+        transform: translateY(0);
+    }
+
+    &::after {
+        display: none;
+    }
+}
+
+.swiper-button-prev-magazine {
+    left: -4rem;
+
+    @media screen and (max-width: 991px) {
+        left: 6rem;
+    }
+}
+
+.swiper-button-next-magazine {
+    right: -4rem;
+
+    @media screen and (max-width: 991px) {
+        right: 6rem;
+    }
+}
