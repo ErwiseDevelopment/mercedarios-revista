@@ -15,7 +15,7 @@
 
                     if(!is_wp_error( $data )) :
                         foreach( $data as $rest_post ) :
-            var_dump($rest_post);
+            //var_dump($rest_post);
 
             ?>
 
@@ -42,7 +42,7 @@
                                                     <a
                                                     class="w-100 d-block u-font-size-14 xxl:u-font-size-16 u-font-weight-medium u-font-family-lato text-center text-decoration-none u-color-folk-white hover:u-bg-folk-dark-golden mb-1 py-2"
                                                     style="background-color: #A10F0F"
-                                                    href="#">
+                                                    href="<?php echo $rest_post->editoria_institucional;?>">
                                                         Institucional
                                                     </a>
                                                 </div>
