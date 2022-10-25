@@ -4,8 +4,8 @@
 
         <div class="row">
                         <?php $args = array(
-                                'post_type' => '3d-flip-book',
                                 'posts_per_page' => -1,
+                                'post_type' => '3d-flip-book',
                                 'order' => 'DESC' ,
                                 'tax_query'      => array(
                                     array(
