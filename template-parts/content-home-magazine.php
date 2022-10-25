@@ -42,6 +42,7 @@
                             
                         <!-- end slide -->
                     </div>
+                    <?php endwhile; endif;?>
                 </div>
                 
                 <div class="swiper-button-prev swiper-button-prev-magazine js-swiper-button-prev-magazine">
@@ -57,7 +58,7 @@
                     src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/arrow-right.png"
                     alt="Seta Direito">
                 </div>
-                <?php endwhile; endif;?>
+               
                 <!-- end swiper -->
             </div>
             
