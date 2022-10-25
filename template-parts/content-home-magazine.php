@@ -41,8 +41,9 @@
                                 </div>
                             </a>
                         </div>
+                        </div>
                     <?php endwhile; endif;?>
-                </div>
+                
                 
                 <div class="swiper-button-prev swiper-button-prev-magazine js-swiper-button-prev-magazine">
                     <img
