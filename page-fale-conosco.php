@@ -125,7 +125,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                             <?php if (!empty(get_field('whatsapp_redes', 'option'))):{?>       
                             <li class="u-list-style-none">
                                 <a 
-                                class="px:u-w-32 px:u-h-32 u-icon__brands u-icon__whatsapp rounded-pill d-flex justify-content-center align-items-center u-font-size-0 before::u-font-size-18 u-font-weight-regular text-decoration-none u-color-folk-dark-marron u-bg-folk-white" rel="noreferrer noopener"
+                                class="px:u-w-32 px:u-h-32 u-icon__brands u-icon__whatsapp rounded-pill d-flex justify-content-center align-items-center u-font-size-0 before::u-font-size-18 u-font-weight-regular text-decoration-none u-color-folk-dark-marron u-bg-folk-red" rel="noreferrer noopener"
                                 href="<?php echo get_field('whatsapp_redes', 'option')?>" <?php if (get_field('nova_guia_wpp', 'option') == '1') :?>  target="_blank" <?php endif; ?> rel="noreferrer noopener">
                                     Whatsapp
                                 </a>
