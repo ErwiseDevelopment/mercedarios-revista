@@ -32,8 +32,8 @@ get_header(); ?>
                 src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/template-content-banner.png"
                 alt="Banner Notícias">
 
-                <h1 class="l-page-news__banner__title u-font-weight-bold text-center u-color-folk-white pb-sm-3">
-                    <?php the_title() ?>
+                <h1 class="l-template-content__banner__title position-relative u-font-weight-bold u-font-family-cinzel-decorative text-center u-color-folk-white pb-4">
+                    Fale Conosco
                 </h1>
             </div>
         </div>
