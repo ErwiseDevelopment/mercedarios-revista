@@ -29,7 +29,7 @@ get_header(); ?>
             <div class="col-12 px-0">
                 <img
                 class="img-fluid"
-                src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/template-content-banner"
+                src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/template-content-banner.png"
                 alt="Banner Notícias">
 
                 <h1 class="l-page-news__banner__title u-font-weight-bold text-center u-color-folk-white pb-sm-3">
