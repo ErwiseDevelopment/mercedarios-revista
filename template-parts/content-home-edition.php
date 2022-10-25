@@ -7,13 +7,13 @@
                                 'posts_per_page' => 1,
                                 'post_type' => '3d-flip-book',
                                 'order' => 'DESC' ,
-                                'tax_query'      => array(
-                                    array(
-                                        'taxonomy' => '3d-flip-book-category',
-                                        'field'    => 'slug',
-                                        'terms'    => 'destaque'
-                                    )
-                                )
+                                // 'tax_query'      => array(
+                                //     array(
+                                //         'taxonomy' => '3d-flip-book-category',
+                                //         'field'    => 'slug',
+                                //         'terms'    => 'destaque'
+                                //     )
+                                // )
                             ); 
                             $book = new WP_Query($args);
                                 if ($book->have_posts()) : 
