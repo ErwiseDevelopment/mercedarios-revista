@@ -28,7 +28,7 @@ get_header(); ?>
 <!-- end edition -->
 
 <!-- magazine -->
-<?php echo get_template_part( 'template-parts/content', 'home-magazine' ) ?>
+<!-- <php echo get_template_part( 'template-parts/content', 'home-magazine' ) ?> -->
 <!-- end magazine -->
 
 <!-- contact-us -->
