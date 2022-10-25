@@ -5,46 +5,33 @@
         <div class="row">
 
             <div class="col-12">
-               <!-- swiper -->
-                
-                    <!-- slide -->
-                        <?php $args = array(
-                            'posts_per_page' => 6,
-                            'post_type' => '3d-flip-book',
-                            'order' =>'DESC' ,
-                            // 'tax_query'      => array(
-                            //     array(
-                            //         'taxonomy' => '3d-flip-book-category',
-                            //         'field'    => 'slug',
-                            //         'terms'    => 'destaque'
-                            //     )
-                            // )
-                        ); 
-                          $book = new WP_Query($args);
-                             if ($book->have_posts()) : 
-                                while($book->have_posts())  : $book->the_post();                   
-                        ?>
-                        <div class="swiper-container js-swiper-magazine">
-                        <div class="swiper-wrappe">
+
+                <!-- swiper -->
+                <div class="swiper-container js-swiper-magazine">
+
+                    <div class="swiper-wrapper">
+
+                        <!-- slide -->
+                        <?php for( $i = 0; $i < 6; $i++ ) { ?>
                                 <a 
                             class="swiper-slide"
-                            href="<?php the_permalink();?>">
+                            href="#">
                                 <div>
                                     <img
                                     class="img-fluid"
-                                    src="<?php echo get_field('capa_destaque');?>"
+                                    src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/magazine-1.png"
                                     alt="Revista 1">
 
                                     <p class="l-magazine__edition u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-lato text-center u-color-folk-white u-bg-folk-bold-marron mb-0 py-2 px-4">
-                                        Edição <?php echo get_field('edicao') ;?>
+                                        Edição 54
                                     </p>
                                 </div>
                             </a>
-                        </div>
-                        </div>
-                    <?php endwhile; endif;?>
-                
-                
+                        <?php } ?>
+                        <!-- end slide -->
+                    </div>
+                </div>
+
                 <div class="swiper-button-prev swiper-button-prev-magazine js-swiper-button-prev-magazine">
                     <img
                     class="img-fluid"
@@ -58,10 +45,9 @@
                     src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/arrow-right.png"
                     alt="Seta Direito">
                 </div>
-               
                 <!-- end swiper -->
             </div>
-            
+
             <div class="col-12 mt-5 pt-3">
 
                 <div class="row justify-content-center">

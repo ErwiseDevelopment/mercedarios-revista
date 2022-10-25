@@ -89,6 +89,8 @@
                <!-- swiper -->
                 
                     <!-- slide -->
+                        
+                        <div class="swiper-container js-swiper-magazine">
                         <?php $args = array(
                             'posts_per_page' => -1,
                             'post_type' => '3d-flip-book',
@@ -98,26 +100,27 @@
                           $book = new WP_Query($args);
                              if ($book->have_posts()) : 
                                 while($book->have_posts())  : $book->the_post();                   
-                        ?>
-                        <div class="swiper-container js-swiper-magazine">
-                        <div class="swiper-wrapper">
-                            <a 
-                            class="swiper-slide"
-                            href="<?php the_permalink();?>">
-                                <div>
-                                    <img
-                                    class="img-fluid"
-                                    src="<?php echo get_field('capa_destaque');?>"
-                                    alt="Revista 1">
+                        ?>          
+                            <div class="swiper-wrapper">
 
-                                    <p class="l-magazine__edition u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-lato text-center u-color-folk-white u-bg-folk-bold-marron mb-0 py-2 px-4">
-                                        Edição <?php echo get_field('edicao') ;?> 
-                                    </p>
-                                </div>
-                            </a>
+                                <a 
+                                class="swiper-slide"
+                                href="<?php the_permalink();?>">
+                                    <div>
+                                        <img
+                                        class="img-fluid"
+                                        src="<?php echo get_field('capa_destaque');?>"
+                                        alt="Revista 1">
+
+                                        <p class="l-magazine__edition u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-lato text-center u-color-folk-white u-bg-folk-bold-marron mb-0 py-2 px-4">
+                                            Edição <?php echo get_field('edicao') ;?> 
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <?php endwhile; endif; ?>
                         </div>
-                        </div>
-                    <?php endwhile; endif; ?>
+                    
                 
                 
                 <div class="swiper-button-prev swiper-button-prev-magazine js-swiper-button-prev-magazine">
