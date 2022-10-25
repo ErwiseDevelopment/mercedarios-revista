@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </a>
-            <?php endwhile; endif; wp_reset_query();?>
+            <?php endwhile; endif;?>
         </div>
     </div>
 </section>
@@ -117,7 +117,7 @@
                             </a>
                         </div>
                         </div>
-                    <?php endwhile; endif; wp_reset_query();?>
+                    <?php endwhile; endif; ?>
                 
                 
                 <div class="swiper-button-prev swiper-button-prev-magazine js-swiper-button-prev-magazine">
