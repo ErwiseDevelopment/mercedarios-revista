@@ -5,22 +5,7 @@
         <div class="row">
 
             <div class="col-12">
-            <?php $args = array(
-                            'posts_per_page' => 6,
-                            'post_type' => '3d-flip-book',
-                            'order' =>'DESC' ,
-                            'tax_query'      => array(
-                                array(
-                                    'taxonomy' => '3d-flip-book-category',
-                                    'field'    => 'slug',
-                                    'terms'    => 'destaque'
-                                )
-                            )
-                        ); 
-                          $book = new WP_Query($args);
-                             if ($book->have_posts()) : 
-                                while($book->have_posts())  : $book->the_post();                   
-                        ?>
+            
 
                 <!-- swiper -->
                 <div class="swiper-container js-swiper-magazine">
@@ -28,7 +13,22 @@
                     <div class="swiper-wrappe">
 
                         <!-- slide -->
-                        
+                        <?php $args = array(
+                            'posts_per_page' => 6,
+                            'post_type' => '3d-flip-book',
+                            'order' =>'DESC' ,
+                            // 'tax_query'      => array(
+                            //     array(
+                            //         'taxonomy' => '3d-flip-book-category',
+                            //         'field'    => 'slug',
+                            //         'terms'    => 'destaque'
+                            //     )
+                            // )
+                        ); 
+                          $book = new WP_Query($args);
+                             if ($book->have_posts()) : 
+                                while($book->have_posts())  : $book->the_post();                   
+                        ?>
                                 <a 
                             class="swiper-slide"
                             href="<?php the_permalink();?>">
@@ -43,11 +43,11 @@
                                     </p>
                                 </div>
                             </a>
-                       
+                            <?php endwhile; endif;?>
                         <!-- end slide -->
                     </div>
                 </div>
-                <?php endwhile; endif;?>
+                
                 <div class="swiper-button-prev swiper-button-prev-magazine js-swiper-button-prev-magazine">
                     <img
                     class="img-fluid"
