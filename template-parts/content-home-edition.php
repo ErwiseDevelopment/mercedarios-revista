@@ -6,6 +6,7 @@
                         <?php $args = array(
                                 'post_type' => '3d-flip-book',
                                 'post_per_page' => 1,
+                                'order' => 'DESC' ,
                                 'tax_query'      => array(
                                     array(
                                         'taxonomy' => '3d-flip-book-category',
