@@ -14,26 +14,27 @@
                         <!-- slide -->
                         <?php $args = array(
                             'post_type' => '3d-flip-book',
+                            'post_per_page' => 1
                         ); 
                           $book = new WP_Query($args);
-                          var_dump($book)
-                        
+                             if ($book->have_posts()) : 
+                                while($book->have_posts())  : $book->the_post();                   
                         ?>
                                 <a 
                             class="swiper-slide"
-                            href="#">
+                            href="<?php the_permalink();?>">
                                 <div>
                                     <img
                                     class="img-fluid"
-                                    src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/magazine-1.png"
+                                    src="<?php echo get_field('capa_destaque');?>"
                                     alt="Revista 1">
 
                                     <p class="l-magazine__edition u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-lato text-center u-color-folk-white u-bg-folk-bold-marron mb-0 py-2 px-4">
-                                       <?php get_the_post_thumbnail()?>
+                                       <?php the_title(); ?>
                                     </p>
                                 </div>
                             </a>
-                       
+                       <?php endwhile; endif;?>
                         <!-- end slide -->
                     </div>
                 </div>
