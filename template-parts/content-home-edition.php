@@ -39,8 +39,7 @@
 
                         <h3 class="u-font-size-42 lg:u-font-size-52 xxl:u-font-size-68 u-font-weight-bold u-font-family-cinzel-decorative u-color-folk-dark-golden">
                             última <br>
-                            edição
-                            <?php var_dump($id) ?>
+                            edição                            
                         </h3>
 
                         <div class="u-bg-folk-dark-marron my-3" style="width:100px;height:5px"></div>
@@ -91,7 +90,7 @@
                 
                     <!-- slide -->
                         <?php $args = array(
-                            'posts_per_page' => 6,
+                            'posts_per_page' => -1,
                             'post_type' => '3d-flip-book',
                             'order' =>'DESC' ,
                             'post__not_in' => $id,
