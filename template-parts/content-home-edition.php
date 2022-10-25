@@ -43,7 +43,7 @@
                         <div class="u-bg-folk-dark-marron my-3" style="width:100px;height:5px"></div>
 
                         <h5 class="u-font-size-28 lg:u-font-size-32 xxl:u-font-size-38 u-font-weight-black u-font-family-lato u-color-folk-dark-marron">
-                            <?php echo the_title()?>
+                            <?php var_dump($book)?>
                         </h5>
 
                         <p class="px:u-line-height-34 u-font-size-16 lg:u-font-size-18 xxl:u-font-size-24 u-font-weight-semibold u-font-family-lato u-color-folk-dark-gray">
