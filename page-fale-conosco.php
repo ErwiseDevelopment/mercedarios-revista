@@ -29,7 +29,7 @@ get_header(); ?>
             <div class="col-12 px-0">
                 <img
                 class="img-fluid"
-                src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/noticias-banner.png"
+                src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/template-content-banner"
                 alt="Banner Notícias">
 
                 <h1 class="l-page-news__banner__title u-font-weight-bold text-center u-color-folk-white pb-sm-3">
@@ -62,7 +62,7 @@ get_header(); ?>
                         </p>
 
                         <span class="d-block u-font-size-12 mb-3">
-                            <?php echo get_field( 'endereco', 'option' ) ?>
+                             <?php echo get_field('endereco', 'option')?>
                         </span>
 
                         <p class="u-font-weight-bold text-uppercase mb-0">
@@ -70,8 +70,7 @@ get_header(); ?>
                         </p>
 
                         <span class="d-block u-font-size-12">
-                            <?php echo get_field( 'telefone_1', 'option' ) ?> <br>
-                            <?php echo get_field( 'telefone_2', 'option' ) ?>
+                            <?php echo get_field('telefone_cabecalho', 'option')?>
                         </span>
 
                         <p class="u-font-weight-bold text-uppercase mt-3 mb-0">
@@ -79,7 +78,7 @@ get_header(); ?>
                         </p>
 
                         <span class="d-block u-font-size-12">
-                            <?php echo get_field( 'e-mail', 'option' ) ?>
+                         <?php echo get_field('e-mail_cabecalho', 'option')?>
                         </span>
 
                         <hr>
@@ -88,59 +87,53 @@ get_header(); ?>
                             nossas redes sociais
                         </p>
 
-                        <ul class="d-flex flex-column justify-content-center mb-0 pl-0">
-
-                            <?php if(get_field( 'instagram', 'option' )) : ?>
-                                <li class=" d-flex align-items-center my-2 mx-1">
-                                    <a
-                                    class="d-flex align-items-center u-font-size-14 u-font-weight-bold text-decoration-none u-color-folk-black"
-                                    href="<?php echo get_field( 'instagram', 'option' ); ?>"
-                                    target="_blank"
-                                    rel="noreferrer noopener">
-                                        <span class="u-icon__brands u-icon__instagram position-relative d-flex justify-content-center align-items-center before::u-font-size-20 u-font-weight-light u-color-folk-cyan mr-3"></span>
-                                        Instagram
-                                    </a>
-                                </li>
-                            <?php endif; ?>
-
-                            <?php if(get_field( 'facebook', 'option' )) : ?>
-                                <li class=" d-flex align-items-center my-2 mx-1">
-                                    <a
-                                    class="d-flex align-items-center u-font-size-14 u-font-weight-bold text-decoration-none u-color-folk-black"
-                                    href="<?php echo get_field( 'facebook', 'option' ); ?>"
-                                    target="_blank"
-                                    rel="noreferrer noopener">
-                                        <span class="u-icon__brands u-icon__facebook-square position-relative d-flex justify-content-center align-items-center before::u-font-size-20 u-font-weight-light u-color-folk-cyan mr-3"></span>
-                                        Facebook
-                                    </a>
-                                </li>
-                            <?php endif; ?>
-
-                            <?php if(get_field( 'youtube', 'option' )) : ?>
-                                <li class=" d-flex align-items-center my-2 mx-1">
-                                    <a
-                                    class="d-flex align-items-center u-font-size-14 u-font-weight-bold text-decoration-none u-color-folk-black"
-                                    href="<?php echo get_field( 'youtube', 'option' ); ?>"
-                                    target="_blank"
-                                    rel="noreferrer noopener">
-                                        <span class="u-icon__brands u-icon__youtube position-relative d-flex justify-content-center align-items-center before::u-font-size-20 u-font-weight-light u-color-folk-cyan mr-3"></span>
-                                        Youtube
-                                    </a>
-                                </li>
-                            <?php endif; ?>
-
-                            <?php if(get_field( 'whatsapp', 'option' )) : ?>
-                                <li class=" d-flex align-items-center my-2 mx-1">
-                                    <a
-                                    class="d-flex align-items-center u-font-size-14 u-font-weight-bold text-decoration-none u-color-folk-black"
-                                    href="<?php echo get_field( 'whatsapp', 'option' ); ?>"
-                                    target="_blank"
-                                    rel="noreferrer noopener">
-                                        <span class="u-icon__brands u-icon__whatsapp position-relative d-flex justify-content-center align-items-center before::u-font-size-20 u-font-weight-light u-color-folk-cyan mr-3"></span>
-                                        Whatsapp
-                                    </a>
-                                </li>
-                            <?php endif; ?>
+                        <ul 
+                        class="d-flex justify-content-center justify-content-xl-start mb-0 pl-0">
+                            
+                            <?php if (!empty(get_field('spotify_redes', 'option'))):{?>
+                            <li class="u-list-style-none pr-2">
+                            <a class="px:u-w-32 px:u-h-32 u-icon__brands u-icon__spotify rounded-pill d-flex justify-content-center align-items-center u-font-size-0 before::u-font-size-18 u-font-weight-regular text-decoration-none u-color-folk-dark-marron u-bg-folk-white"  rel="noreferrer noopener"
+                                href="<?php echo get_field('spotify_redes', 'option')?>" <?php if (get_field('nova_guia_stf', 'option') == '1') :?>  target="_blank" <?php endif; ?>
+                                rel="noreferrer noopener">
+                                    Spotify
+                                </a>
+                            </li>
+                            <?php } else: endif;?>   
+                                <?php if (!empty(get_field('facebook_redes', 'option'))):{?>        
+                            <li class="u-list-style-none pr-2">
+                                 <a class="px:u-w-32 px:u-h-32 u-icon__brands u-icon__facebook rounded-pill d-flex justify-content-center align-items-center u-font-size-0 before::u-font-size-18 u-font-weight-regular text-decoration-none u-color-folk-dark-marron u-bg-folk-white"  rel="noreferrer noopener"
+                                href="<?php echo get_field('facebook_redes', 'option')?>" <?php if (get_field('nova_guia_face', 'option') == '1') :?>  target="_blank" <?php endif; ?>
+                                rel="noreferrer noopener">
+                                    Facebook
+                                </a>
+                            </li>
+                             <?php } else: endif;?>     
+                             <?php if (!empty(get_field('instagram_redes', 'option'))):{?>  
+                            <li class="u-list-style-none pr-2">
+                                 <a class="px:u-w-32 px:u-h-32 u-icon__brands u-icon__instagram  rounded-pill d-flex justify-content-center align-items-center u-font-size-0 before::u-font-size-18 u-font-weight-regular text-decoration-none u-color-folk-dark-marron u-bg-folk-white"  rel="noreferrer noopener"
+                                href="<?php echo get_field('instagram_redes', 'option')?>" <?php if (get_field('nova_guia_insta', 'option') == '1') :?>  target="_blank" <?php endif; ?>
+                                rel="noreferrer noopener">
+                                    Instagram
+                                </a>
+                            </li>
+                            <?php } else: endif;?>   
+                            <?php if (!empty(get_field('youtube_redes', 'option'))):{?>       
+                            <li class="u-list-style-none pr-2">
+                                 <a class="px:u-w-32 px:u-h-32 u-icon__brands u-icon__youtube rounded-pill d-flex justify-content-center align-items-center u-font-size-0 before::u-font-size-18 u-font-weight-regular text-decoration-none u-color-folk-dark-marron u-bg-folk-white" rel="noreferrer noopener"
+                                href="<?php echo get_field('youtube_redes', 'option')?>" <?php if (get_field('nova_guia_yt', 'option') == '1') :?>  target="_blank" <?php endif; ?> rel="noreferrer noopener">
+                                    Youtube
+                                </a>
+                            </li>
+                            <?php } else: endif;?>   
+                            <?php if (!empty(get_field('whatsapp_redes', 'option'))):{?>       
+                            <li class="u-list-style-none">
+                                <a 
+                                class="px:u-w-32 px:u-h-32 u-icon__brands u-icon__whatsapp rounded-pill d-flex justify-content-center align-items-center u-font-size-0 before::u-font-size-18 u-font-weight-regular text-decoration-none u-color-folk-dark-marron u-bg-folk-white" rel="noreferrer noopener"
+                                href="<?php echo get_field('whatsapp_redes', 'option')?>" <?php if (get_field('nova_guia_wpp', 'option') == '1') :?>  target="_blank" <?php endif; ?> rel="noreferrer noopener">
+                                    Whatsapp
+                                </a>
+                            </li>
+                            <?php } else: endif;?>   
                         </ul>
                     </div>
                 </div>
@@ -150,7 +143,7 @@ get_header(); ?>
 
                 <div class="row">
 
-                    <div class="col-lg-6 my-3 my-lg-0">
+                    <div class="col-lg-12 my-3 my-lg-0">
                         <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.321497349539!2d-51.22073417633647!3d-30.02763312395829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979a8b263b01b%3A0x9c516cb3faeabf9a!2sAv.%20Alberto%20Bins%2C%201020%20-%20Centro%20Hist%C3%B3rico%2C%20Porto%20Alegre%20-%20RS%2C%2090030-141!5e0!3m2!1spt-BR!2sbr!4v1653702322756!5m2!1spt-BR!2sbr" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                         <p>
@@ -159,15 +152,6 @@ get_header(); ?>
                             90030-141 - Porto Alegre - SP - Brasil
                         </p>
                     </div>
-
-                    <div class="col-lg-6 my-3 my-lg-0">
-                        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.3070076020203!2d-46.615676185021506!3d-23.593320084667013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bc1f83f13c1%3A0x5134f0705a0edb80!2sPia%20Sociedade%20Mission%C3%A1rios%20S%C3%A3o%20Carlos%20-%20Escalabrinianos!5e0!3m2!1spt-BR!2sbr!4v1653702274293!5m2!1spt-BR!2sbr" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                        <p>
-                            <strong>Sede Administrativa:</strong> <br>
-                            Rua Huet Bacelar, 657 - Ipiranga <br>
-                            04275-000 - São Paulo - SP - Brasil
-                        </p>
                     </div>
                 </div>
             </div>
