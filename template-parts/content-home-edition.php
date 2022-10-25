@@ -8,7 +8,7 @@
                                 'post_per_page' => 1,
                                 'tax_query'      => array(
                                     array(
-                                        'taxonomy' => '-category',
+                                        'taxonomy' => '3d-flip-book-category',
                                         'field'    => 'slug',
                                         'terms'    => 'destaque'
                                     )
