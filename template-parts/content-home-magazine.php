@@ -5,14 +5,7 @@
         <div class="row">
 
             <div class="col-12">
-
-                <!-- swiper -->
-                <div class="swiper-container js-swiper-magazine">
-
-                    <div class="swiper-wrappe">
-
-                        <!-- slide -->
-                        <?php $args = array(
+            <?php $args = array(
                             'post_type' => '3d-flip-book',
                             'post_per_page' => -1,
                             'order' =>'DSC' ,
@@ -22,6 +15,14 @@
                              if ($book->have_posts()) : 
                                 while($book->have_posts())  : $book->the_post();                   
                         ?>
+
+                <!-- swiper -->
+                <div class="swiper-container js-swiper-magazine">
+
+                    <div class="swiper-wrappe">
+
+                        <!-- slide -->
+                        
                                 <a 
                             class="swiper-slide"
                             href="<?php the_permalink();?>">
