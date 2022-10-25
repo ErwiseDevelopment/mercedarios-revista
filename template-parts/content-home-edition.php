@@ -16,7 +16,8 @@
                             ); 
                             $book = new WP_Query($args);
                                 if ($book->have_posts()) : 
-                                    while($book->have_posts())  : $book->the_post();                   
+                                    while($book->have_posts())  : $book->the_post(); 
+                        $id = $book->the_id()                  
                         ?>
             <a 
             class="col-12 text-decoration-none"
@@ -49,7 +50,7 @@
                         </p>
 
                         <p class="u-font-size-16 lg:u-font-size-18 xxl:u-font-size-24 u-font-weight-black u-font-family-lato u-color-folk-dark-golden mb-2">
-                            Edição . <?php echo get_field('edicao') ;?>
+                            Edição <?php echo get_field('edicao') ;?>
                         </p>
 
                         <p class="u-font-size-16 lg:u-font-size-18 xxl:u-font-size-24 u-font-weight-black u-font-family-lato u-color-folk-dark-golden my-2">
@@ -57,7 +58,7 @@
                         </p>
 
                         <p class="u-font-size-16 lg:u-font-size-18 xxl:u-font-size-24 u-font-weight-black u-font-family-lato u-color-folk-dark-golden">
-                            <?php echo get_field('mes')?> . / . <?php echo get_field('ano') ?>
+                            <?php echo get_field('mes')?> /  <?php echo get_field('ano') ?>
                         </p>
 
                         <div class="row">

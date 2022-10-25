@@ -14,7 +14,9 @@
                         <!-- slide -->
                         <?php $args = array(
                             'post_type' => '3d-flip-book',
-                            'post_per_page' => 1
+                            'post_per_page' => -1,
+                            'order' =>'DSC' ,
+                            'post__not__in' => $id,
                         ); 
                           $book = new WP_Query($args);
                              if ($book->have_posts()) : 
