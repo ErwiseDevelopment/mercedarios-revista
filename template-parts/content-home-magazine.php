@@ -5,14 +5,9 @@
         <div class="row">
 
             <div class="col-12">
-            
-
-                <!-- swiper -->
+               <!-- swiper -->
                 <div class="swiper-container js-swiper-magazine">
-
-                    
-
-                        <!-- slide -->
+                    <!-- slide -->
                         <?php $args = array(
                             'posts_per_page' => 6,
                             'post_type' => '3d-flip-book',
@@ -44,7 +39,7 @@
                                     </p>
                                 </div>
                             </a>
-                            <?php endwhile; endif;?>
+                            
                         <!-- end slide -->
                     </div>
                 </div>
@@ -64,7 +59,7 @@
                 </div>
                 <!-- end swiper -->
             </div>
-
+            <?php endwhile; endif;?>
             <div class="col-12 mt-5 pt-3">
 
                 <div class="row justify-content-center">
