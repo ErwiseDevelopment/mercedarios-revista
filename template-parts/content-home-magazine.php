@@ -33,15 +33,15 @@
                                     alt="Revista 1">
 
                                     <p class="l-magazine__edition u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-lato text-center u-color-folk-white u-bg-folk-bold-marron mb-0 py-2 px-4">
-                                       Ler agora
+                                        Edição <?php echo get_field('edicao') ;?>
                                     </p>
                                 </div>
                             </a>
-                       <?php endwhile; endif;?>
+                       
                         <!-- end slide -->
                     </div>
                 </div>
-
+                <?php endwhile; endif;?>
                 <div class="swiper-button-prev swiper-button-prev-magazine js-swiper-button-prev-magazine">
                     <img
                     class="img-fluid"
