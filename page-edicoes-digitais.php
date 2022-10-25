@@ -59,7 +59,8 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                              if ($book->have_posts()) : 
                                 while($book->have_posts())  : $book->the_post();                   
                         ?>
-                                <div class="col-md-4 mb-5 swiper-wrapper">
+                                <div class="col-md-4 mb-5">
+                            <div class="swiper-wrapper">
                                 <a 
                                     class="swiper-slide"
                                     href="<?php the_permalink();?>">
@@ -74,6 +75,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                                         </p>
                                     </div>
                                 </a>
+                                </div>
                                 </div>
                     <?php 
                             endwhile;
