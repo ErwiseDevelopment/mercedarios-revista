@@ -89,8 +89,6 @@
                <!-- swiper -->
                 
                     <!-- slide -->
-                        
-                        <div class="swiper-container js-swiper-magazine">
                         <?php $args = array(
                             'posts_per_page' => -1,
                             'post_type' => '3d-flip-book',
@@ -100,7 +98,9 @@
                           $book = new WP_Query($args);
                              if ($book->have_posts()) : 
                                 while($book->have_posts())  : $book->the_post();                   
-                        ?>          
+                        ?>
+                        <div class="swiper-container js-swiper-magazine">
+
                             <div class="swiper-wrapper">
 
                                 <a 
@@ -118,9 +118,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <?php endwhile; endif; ?>
                         </div>
-                    
+                    <?php endwhile; endif; ?>
                 
                 
                 <div class="swiper-button-prev swiper-button-prev-magazine js-swiper-button-prev-magazine">
