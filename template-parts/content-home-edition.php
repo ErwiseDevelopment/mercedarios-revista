@@ -3,17 +3,31 @@
     <div class="container">
 
         <div class="row">
-
+                        <?php $args = array(
+                                'post_type' => '3d-flip-book',
+                                'post_per_page' => 1,
+                                'tax_query'      => array(
+                                    array(
+                                        'taxonomy' => '-category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'destaque'
+                                    )
+                                )
+                            ); 
+                            $book = new WP_Query($args);
+                                if ($book->have_posts()) : 
+                                    while($book->have_posts())  : $book->the_post();                   
+                        ?>
             <a 
             class="col-12 text-decoration-none"
-            href="#">
+            href="<?php echo the_permalink()?>">
 
                 <div class="row">
 
                     <div class="col-lg-6">
                         <img
                         class="img-fluid w-100"
-                        src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/edition-image.png"
+                        src="<?php echo get_field('capa_destaque'); ?>"
                         alt="Single Temas">
                     </div>
 
@@ -27,25 +41,23 @@
                         <div class="u-bg-folk-dark-marron my-3" style="width:100px;height:5px"></div>
 
                         <h5 class="u-font-size-28 lg:u-font-size-32 xxl:u-font-size-38 u-font-weight-black u-font-family-lato u-color-folk-dark-marron">
-                            Igreja e Sociedade
+                            <?php echo the_title()?>
                         </h5>
 
                         <p class="px:u-line-height-34 u-font-size-16 lg:u-font-size-18 xxl:u-font-size-24 u-font-weight-semibold u-font-family-lato u-color-folk-dark-gray">
-                            “A instituição educativa deve propor uma aliança em torno
-                            de uma educação para a verdade, a solidariedade,
-                            o respeito às diferenças e a paz.” - Papa Francisco
+                            <?php echo get_field('descricao') ?>
                         </p>
 
                         <p class="u-font-size-16 lg:u-font-size-18 xxl:u-font-size-24 u-font-weight-black u-font-family-lato u-color-folk-dark-golden mb-2">
-                            Edição 55
+                            Edição . <?php echo get_field('edicao') ;?>
                         </p>
 
                         <p class="u-font-size-16 lg:u-font-size-18 xxl:u-font-size-24 u-font-weight-black u-font-family-lato u-color-folk-dark-golden my-2">
-                            Ano 18
+                            Ano . <?php echo get_field('ano') ?>
                         </p>
 
                         <p class="u-font-size-16 lg:u-font-size-18 xxl:u-font-size-24 u-font-weight-black u-font-family-lato u-color-folk-dark-golden">
-                            Abril/2022
+                            <?php echo get_field('mes')?> . / . <?php echo get_field('ano') ?>
                         </p>
 
                         <div class="row">
@@ -59,6 +71,7 @@
                     </div>
                 </div>
             </a>
+            <?php endwhile; endif;?>
         </div>
     </div>
 </section>
