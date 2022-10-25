@@ -3,7 +3,9 @@
     <div class="container">
 
         <div class="row">
-                        <?php $args = array(
+                        <?php 
+                         $id = $book->ID; 
+                        $args = array(
                                 'posts_per_page' => 1,
                                 'post_type' => '3d-flip-book',
                                 'order' => 'DESC' ,
@@ -18,7 +20,7 @@
                             $book = new WP_Query($args);
                                 if ($book->have_posts()) : 
                                     while($book->have_posts())  : $book->the_post(); 
-                                    $id = $book->ID;                  
+                                                    
                         ?>
             <a 
             class="col-12 text-decoration-none"
@@ -109,7 +111,7 @@
                                     alt="Revista 1">
 
                                     <p class="l-magazine__edition u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-lato text-center u-color-folk-white u-bg-folk-bold-marron mb-0 py-2 px-4">
-                                        Edição <?php echo get_field('edicao') ;?>
+                                        Edição <?php echo get_field('edicao') ;?> <?php var_dump($id) ?>
                                     </p>
                                 </div>
                             </a>
