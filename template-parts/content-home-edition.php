@@ -40,6 +40,7 @@
                         <h3 class="u-font-size-42 lg:u-font-size-52 xxl:u-font-size-68 u-font-weight-bold u-font-family-cinzel-decorative u-color-folk-dark-golden">
                             última <br>
                             edição
+                            <?php var_dump($id) ?>
                         </h3>
 
                         <div class="u-bg-folk-dark-marron my-3" style="width:100px;height:5px"></div>
@@ -111,7 +112,7 @@
                                     alt="Revista 1">
 
                                     <p class="l-magazine__edition u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-lato text-center u-color-folk-white u-bg-folk-bold-marron mb-0 py-2 px-4">
-                                        Edição <?php echo get_field('edicao') ;?> <?php var_dump($id) ?>
+                                        Edição <?php echo get_field('edicao') ;?> 
                                     </p>
                                 </div>
                             </a>
