@@ -100,7 +100,7 @@
                                 while($book->have_posts())  : $book->the_post();                   
                         ?>
                         <div class="swiper-container js-swiper-magazine">
-                        <div class="swiper-wrappe">
+                        <div class="swiper-wrapper">
                             <a 
                             class="swiper-slide"
                             href="<?php the_permalink();?>">

@@ -59,21 +59,21 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                              if ($book->have_posts()) : 
                                 while($book->have_posts())  : $book->the_post();                   
                         ?>
-                                <div class="col-md-4 mb-5">
+                                <div class="col-md-4 mb-5 swiper-wrapper">
                                 <a 
-                            class="swiper-slide"
-                            href="<?php the_permalink();?>">
-                                <div>
-                                    <img
-                                    class="img-fluid"
-                                    src="<?php echo get_field('capa_destaque');?>"
-                                    alt="Revista 1">
+                                    class="swiper-slide"
+                                    href="<?php the_permalink();?>">
+                                    <div>
+                                        <img
+                                        class="img-fluid"
+                                        src="<?php echo get_field('capa_destaque');?>"
+                                        alt="Revista 1">
 
-                                    <p class="l-magazine__edition u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-lato text-center u-color-folk-white u-bg-folk-bold-marron mb-0 py-2 px-4">
-                                        Edição <?php echo get_field('edicao') ;?> 
-                                    </p>
-                                </div>
-                            </a>
+                                        <p class="l-magazine__edition u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-lato text-center u-color-folk-white u-bg-folk-bold-marron mb-0 py-2 px-4">
+                                            Edição <?php echo get_field('edicao') ;?> 
+                                        </p>
+                                    </div>
+                                </a>
                                 </div>
                     <?php 
                             endwhile;
