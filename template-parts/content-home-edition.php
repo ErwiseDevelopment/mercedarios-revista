@@ -18,7 +18,7 @@
                             $book = new WP_Query($args);
                                 if ($book->have_posts()) : 
                                     while($book->have_posts())  : $book->the_post(); 
-                                    $id = $book->id();                  
+                                    $id = $book->ID;                  
                         ?>
             <a 
             class="col-12 text-decoration-none"
@@ -91,7 +91,7 @@
                             'posts_per_page' => 6,
                             'post_type' => '3d-flip-book',
                             'order' =>'DESC' ,
-                            'post__not__in' => $id,
+                            'post__not_in' => $id,
                         ); 
                           $book = new WP_Query($args);
                              if ($book->have_posts()) : 
