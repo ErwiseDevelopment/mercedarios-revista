@@ -13,7 +13,7 @@
                                 array(
                                     'taxonomy' => '3d-flip-book-category',
                                     'field'    => 'slug',
-                                    'terms'    => 'revista'
+                                    'terms'    => 'destaque'
                                 )
                             )
                         ); 
