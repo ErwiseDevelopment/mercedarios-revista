@@ -54,7 +54,7 @@
                         </p>
 
                         <p class="u-font-size-16 lg:u-font-size-18 xxl:u-font-size-24 u-font-weight-black u-font-family-lato u-color-folk-dark-golden my-2">
-                            Ano . <?php echo get_field('ano') ?>
+                            Ano  <?php echo get_field('ano') ?>
                         </p>
 
                         <p class="u-font-size-16 lg:u-font-size-18 xxl:u-font-size-24 u-font-weight-black u-font-family-lato u-color-folk-dark-golden">
