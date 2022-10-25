@@ -57,9 +57,10 @@
                     src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/arrow-right.png"
                     alt="Seta Direito">
                 </div>
+                <?php endwhile; endif;?>
                 <!-- end swiper -->
             </div>
-            <?php endwhile; endif;?>
+            
             <div class="col-12 mt-5 pt-3">
 
                 <div class="row justify-content-center">
