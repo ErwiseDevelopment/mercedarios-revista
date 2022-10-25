@@ -101,7 +101,7 @@
                         ?>
                         <div class="swiper-container js-swiper-magazine">
                         <div class="swiper-wrappe">
-                                <a 
+                            <a 
                             class="swiper-slide"
                             href="<?php the_permalink();?>">
                                 <div>
