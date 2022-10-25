@@ -6,9 +6,7 @@
 
             <div class="col-12">
                <!-- swiper -->
-                <div class="swiper-container js-swiper-magazine">
-                    <!-- slide -->
-                        <?php $args = array(
+               <?php $args = array(
                             'posts_per_page' => 6,
                             'post_type' => '3d-flip-book',
                             'order' =>'DESC' ,
@@ -24,6 +22,8 @@
                              if ($book->have_posts()) : 
                                 while($book->have_posts())  : $book->the_post();                   
                         ?>
+                <div class="swiper-container js-swiper-magazine">
+                    <!-- slide -->
                         <div class="swiper-wrappe">
                                 <a 
                             class="swiper-slide"
@@ -39,11 +39,10 @@
                                     </p>
                                 </div>
                             </a>
-                            
-                        <!-- end slide -->
-                    </div>
-                    <?php endwhile; endif;?>
+                        </div>
+                    
                 </div>
+                <?php endwhile; endif;?>
                 
                 <div class="swiper-button-prev swiper-button-prev-magazine js-swiper-button-prev-magazine">
                     <img
