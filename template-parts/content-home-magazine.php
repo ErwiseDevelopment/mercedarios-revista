@@ -9,7 +9,13 @@
                             'post_type' => '3d-flip-book',
                             'post_per_page' => -1,
                             'order' =>'DSC' ,
-                            'post__not__in' => $id,
+                            'tax_query'      => array(
+                                array(
+                                    'taxonomy' => '3d-flip-book-category',
+                                    'field'    => 'slug',
+                                    'terms'    => 'revista'
+                                )
+                            )
                         ); 
                           $book = new WP_Query($args);
                              if ($book->have_posts()) : 
