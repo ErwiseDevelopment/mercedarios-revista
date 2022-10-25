@@ -93,7 +93,7 @@
                             'posts_per_page' => -1,
                             'post_type' => '3d-flip-book',
                             'order' =>'DESC' ,
-                            'post__not_in' => $id,
+                            'post__not_in' => array($id),
                         ); 
                           $book = new WP_Query($args);
                              if ($book->have_posts()) : 
