@@ -18,7 +18,7 @@
                             $book = new WP_Query($args);
                                 if ($book->have_posts()) : 
                                     while($book->have_posts())  : $book->the_post(); 
-                        $id = $book->id;                  
+                                    $id = $book->id();                  
                         ?>
             <a 
             class="col-12 text-decoration-none"
