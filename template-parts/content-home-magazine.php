@@ -29,7 +29,7 @@
                                     alt="Revista 1">
 
                                     <p class="l-magazine__edition u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-lato text-center u-color-folk-white u-bg-folk-bold-marron mb-0 py-2 px-4">
-                                        Edição 54
+                                       <?php get_the_post_thumbnail()?>
                                     </p>
                                 </div>
                             </a>
