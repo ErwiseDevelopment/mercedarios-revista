@@ -10,7 +10,7 @@
                 <!-- swiper -->
                 <div class="swiper-container js-swiper-magazine">
 
-                    <div class="swiper-wrappe">
+                    
 
                         <!-- slide -->
                         <?php $args = array(
@@ -29,6 +29,7 @@
                              if ($book->have_posts()) : 
                                 while($book->have_posts())  : $book->the_post();                   
                         ?>
+                        <div class="swiper-wrappe">
                                 <a 
                             class="swiper-slide"
                             href="<?php the_permalink();?>">
