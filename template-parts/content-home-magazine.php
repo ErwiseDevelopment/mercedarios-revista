@@ -9,10 +9,16 @@
                 <!-- swiper -->
                 <div class="swiper-container js-swiper-magazine">
 
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrappe">
 
                         <!-- slide -->
-                        <?php for( $i = 0; $i < 6; $i++ ) { ?>
+                        <?php $args = array(
+                            'post_type' => '3d-flip-book',
+                        ); 
+                          $book = new WP_Query($args);
+                          var_dump($book)
+                        
+                        ?>
                                 <a 
                             class="swiper-slide"
                             href="#">
@@ -27,7 +33,7 @@
                                     </p>
                                 </div>
                             </a>
-                        <?php } ?>
+                       
                         <!-- end slide -->
                     </div>
                 </div>
