@@ -89,7 +89,11 @@
                <!-- swiper -->
                 
                     <!-- slide -->
-                        <?php $args = array(
+                      
+                        <div class="swiper-container js-swiper-magazine">
+
+                            <div class="swiper-wrapper">
+                            <?php $args = array(
                             'posts_per_page' => -1,
                             'post_type' => '3d-flip-book',
                             'order' =>'DESC' ,
@@ -99,10 +103,6 @@
                              if ($book->have_posts()) : 
                                 while($book->have_posts())  : $book->the_post();                   
                         ?>
-                        <div class="swiper-container js-swiper-magazine">
-
-                            <div class="swiper-wrapper">
-
                                 <a 
                                 class="swiper-slide"
                                 href="<?php the_permalink();?>">
@@ -117,9 +117,10 @@
                                         </p>
                                     </div>
                                 </a>
+                                <?php endwhile; endif; ?>
                             </div>
                         </div>
-                    <?php endwhile; endif; ?>
+                    
                 
                 
                 <div class="swiper-button-prev swiper-button-prev-magazine js-swiper-button-prev-magazine">
