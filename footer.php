@@ -57,14 +57,14 @@
                             <p class="d-flex">
                                 <span class="u-icon__free u-icon__phone before::u-font-size-20 u-font-weight-semibold u-color-folk-white"></span>
                                 <span class="u-font-size-14 u-font-weight-medium u-font-family-lato u-color-folk-white pl-2">                                     
-                                    <?php echo get_field('telefone_cabecalho', 'option')?>
+                                 <?php echo get_field('telefone_cabecalho', 'option')?>
                                 </span>
                             </p>
 
                             <p class="d-flex">
                                 <span class="u-icon__free u-icon__envelope before::u-font-size-20 u-font-weight-semibold u-color-folk-white"></span>
                                 <span class="u-font-size-14 u-font-weight-medium u-font-family-lato u-color-folk-white pl-2">
-                                    <?php echo get_field('e-mail_cabecalho', 'option')?>
+                                   
                                 </span>
                             </p>
                         </div>
