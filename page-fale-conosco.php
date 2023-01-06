@@ -49,7 +49,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                 <div class="row">
 
                     <div class="col-md-6">
-                        <?php echo do_shortcode( '[contact-form-7 id="11" title="Contato"]' ) ?>
+                        <?php echo do_shortcode( '[contact-form-7 id="672" title="Formulário de contato 1"]' ) ?>
                     </div>
 
                     <div class="col-md-5 offset-md-1 mt-5 mt-md-0">
