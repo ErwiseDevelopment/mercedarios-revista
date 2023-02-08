@@ -57,7 +57,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                                     array(
                                         'taxonomy' => '3d-flip-book-category',
                                         'field'    => 'slug',
-                                        'terms'    => 'revista'
+                                        'terms'    => 'recanto'
                                     )
                                 )
                             
