@@ -25,3 +25,14 @@ const swiperMagazine = new Swiper( '.js-swiper-magazine', {
         nextEl: '.js-swiper-button-next-magazine'
     }
 })
+
+
+/* banner materials */
+const swiperBannerMaterials = new Swiper( '.js-swiper-banner-materials', {
+    loop: true,
+    
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false
+    }
+})
