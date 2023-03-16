@@ -33,6 +33,8 @@ get_header(); ?>
 
 <!-- contact-us -->
 <?php echo get_template_part( 'template-parts/content', 'home-contact-us' ) ?>
+
+<?php echo get_template_part( 'template-parts/content', 'banner-materials' ) ?>
 <!-- end contact-us -->
 
 <?php endwhile; ?>
