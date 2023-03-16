@@ -31,10 +31,10 @@ get_header(); ?>
 <!-- <php echo get_template_part( 'template-parts/content', 'home-magazine' ) ?> -->
 <!-- end magazine -->
 
+<?php echo get_template_part( 'template-parts/content', 'banner-materials' ) ?>
 <!-- contact-us -->
 <?php echo get_template_part( 'template-parts/content', 'home-contact-us' ) ?>
 
-<?php echo get_template_part( 'template-parts/content', 'banner-materials' ) ?>
 <!-- end contact-us -->
 
 <?php endwhile; ?>
